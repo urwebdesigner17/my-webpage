@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+    <title>Web Designer</title>
+</head>
+<body>
+
+<a id="button"></a>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo2.png" class="logo" alt="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Front-end Developer</p>
+            <h1 class="typewriter">Hi, Im <span>Robert</span><br> <span id="typewriter" data-array=""></span></h1>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="me">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a creative Web Designer with a passion for building responsive and engaging websites. With my two years of experience designing webpages that exceed clients’ expectations, I think I would be a great addition to your team.</p><br>
+                <p>As the Junior Front-end Developer in my previous company, I help design functional and attractive websites from design mockups and converts it to live pages. I regularly collaborate with our marketing and development teams to create user-friendly content that targets our clients’ audience and increases their web traffic.</p><br>
+                <p>Aside from web development I have experience graphics design and photography as my side skills. I am highly passionate about my craft.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Proficiency </p>
+                    <p class="tab-links" onclick="opentab('education')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Designing Websites Interface</li>
+                        <li><span>Search Engine Optimization</span><br>On-page and Off-page SEO</li>
+                        <li><span>Arts & Graphics Design</span><br>Create and design web graphics contents.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Web Fundamentals</span><br>Proficient in using HTML, CSS and Javascript</li>
+                        <li><span>JS Frameworks</span><br>Experienced in using javascript framewors such as; React, Vue and Nuxt</li>
+                        <li><span>CSS Frameworks</span><br>Experienced in using Bootstrap and Tailwind CSS</li>
+                        <li><span>CMS Platform</span><br>Experienced in developing website using WordPress, Joomla! and Shopify.</li>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 Jan-Dec Ideahub Solutions Inc.</span><br>Junior Front-end Developer</li>
+                        <li><span>2014-2016 Accupoint Sales Inc.</span><br>Sales Admin, Graphic Designer</li>
+                        <li><span>2010-2013 RAM-FSIP Business Solutions</span><br>CSR/TSR, Web Developer, Graphics Designer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Design functional and attractive websites from simple to complex design user-friendly interface.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h2>SEO</h2>
+                <p>Experienced in Search Engine fundamentals within web page as well as using strategies for organic search performance.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-image"></i>
+                <h2>Multimedia</h2>
+                <p>Creates web contents from image and videos presentation or marketing promotion purposes.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Regional Conference of Dermatology</h3>
+                    <p>Virtual convention of all resident and non-residents dermatologists. It is a team effort projects from my previous company. The whole composition of this web app is made possible by using Nuxtjs</p>
+                    <a href="https://rcd2022manila.com.ph/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Cybercatch</h3>
+                    <p>Virtual convention of cyber security. It is a team effort projects from my previous company. The whole composition of this web app is made possible by using Vuejs</p>
+                    <a href="https://cybercatch.virtualmediaevents.com/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Golfzoo</h3>
+                    <p>It is a golf travel agencies owned by golf specialists in the US. Participating in maintaining the site by enhancing the front-end side. This website is built with WordPress.</p>
+                    <a href="https://golfzoo.net/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#portfolio" class="btn">See more</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>urwebdesigner17@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+63 936.132.5627</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Ron. Made with <i class="fas fa-heart"></i> by Fire-peak Web Designer</p>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
