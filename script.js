@@ -105,3 +105,42 @@ btn.on('click', function(e) {
   $('html, body').animate({scrollTop:0}, '300');
 });
 
+
+//load more
+// var work = document.querySelectorAll('.work');
+// var btn = document.querySelector('.btn');
+// var currentImg = 2
+// btn.addEventListener('click',
+// function(){
+// 	for(var i = currentImg; i < currentImg + 2; i++){
+// 		if (work[i]){
+// 			work[i].style.display = 'block';
+// 		}
+// 		currentImg += 2;
+// 	}
+// })
+
+
+
+
+
+
+
+
+
+
+  function myFunction() {
+	var dots = document.getElementById("dots");
+	var moreText = document.getElementById("more");
+	var btnText = document.getElementById("myBtn");
+
+	if (dots.style.display === "none") {
+	  dots.style.display = "contents";
+	  btnText.innerHTML = "See more";
+	  moreText.style.display = "none";
+	} else {
+	  dots.style.display = "none";
+	  btnText.innerHTML = "See less";
+	  moreText.style.display = "contents";
+	}
+  }
